@@ -980,3 +980,5 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+  .footer-list { min-width: 180px; }
+
