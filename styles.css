@@ -955,3 +955,11 @@ header {
   .navbar-link:hover::after,
   .navbar-link:focus::after { --scaleY: scaleY(1); }
 }
+.hero .container {
+    max-width: 1150px;
+    gap: 50px;
+  }
+
+  .hero-title,
+  .hero-text { margin-bottom: 35px; }
+
