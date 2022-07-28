@@ -327,7 +327,10 @@ header {
   line-height: 1.5;
 }
 
-
+.explore-product {
+    background: var(--eerie-black-2);
+    padding: 60px 0;
+  }
 
 
   
