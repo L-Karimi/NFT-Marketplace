@@ -844,4 +844,114 @@ header {
   .about-list,
   .top-seller-list { grid-template-columns: repeat(3, 1fr); }
 
-  
+  .footer-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+    max-width: 280px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .footer-top .logo,
+  .footer-brand-text { margin-inline: 0; }
+
+  .social-list { justify-content: flex-start; }
+
+  .footer-link-box { gap: 60px; }
+
+  .footer-item-title {
+    --fs-2: 25px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-1: 55px;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1150px; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .header-right,
+  .header-nav-wrapper { flex-grow: 1; }
+
+  .navbar-toggle-btn { display: none; }
+
+  .navbar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: scale(1);
+    position: static;
+    background: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-link { position: relative; }
+
+  .navbar-link:is(:hover, :focus) {
+    background: none;
+    color: var(--red-crayola);
+  }
+
+  .navbar-link::after {
+    --scaleY: scaleY(0);
+
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) var(--scaleY);
+    transform-origin: bottom;
+    width: 2px;
+    height: 10px;
+    background: linear-gradient(to top, var(--red-crayola), transparent);
+    transition: var(--transition);
+  }
+
+  .navbar-link:hover::after,
+  .navbar-link:focus::after { --scaleY: scaleY(1); }
+}
