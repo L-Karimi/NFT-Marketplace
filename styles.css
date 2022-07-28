@@ -963,3 +963,20 @@ header {
   .hero-title,
   .hero-text { margin-bottom: 35px; }
 
+  .product-list,
+  .about-list,
+  .top-seller-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+  /**
+   * ABOUT
+   */
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
