@@ -807,5 +807,27 @@ header {
   
 }
   
-  
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .search-field {
+    background: var(--eerie-black-1);
+    color: var(--gray-web);
+    padding: 0 15px;
+    border: 1px solid var(--onyx-1);
+    border-radius: 4px;
+  }
+
+
+
   
